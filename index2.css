@@ -99,19 +99,25 @@ ol {
 }
 
 .alt-nav-logo {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--g-white);
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
 }
 
-.alt-nav-logo span {
-  color: var(--g-orange);
+.alt-nav-logo img {
+  height: 52px;
+  width: auto;
+  display: block;
+  padding: 4px 12px;
+  background: white;
+  border-radius: 50px;
+  transition: all 0.4s var(--ease-out);
 }
 
-.alt-nav.scrolled .alt-nav-logo {
-  color: var(--g-navy);
+.alt-nav.scrolled .alt-nav-logo img {
+  height: 42px;
+  background: transparent;
+  padding: 0;
 }
 
 .alt-nav-links {
@@ -659,6 +665,16 @@ ol {
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 2.5rem;
   padding-bottom: 3rem;
+}
+
+.alt-footer-logo {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.alt-footer-logo img {
+  height: 60px;
+  width: auto;
 }
 
 .alt-footer-brand p {
